@@ -4,3 +4,7 @@ logs
 
 # Dependency Directory
 node_modules
+
+# Sass
+source/css/_css
+.sass-cache
