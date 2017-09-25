@@ -2,5 +2,7 @@
 
 <body>
   <%- partial('_partial/header', null, { path: path }) %>
+
+  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
 </body>
 </html>
