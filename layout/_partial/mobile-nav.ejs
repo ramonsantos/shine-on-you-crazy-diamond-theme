@@ -1,0 +1,24 @@
+<aside>
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <% for (var i in theme.menu){ %>
+        <li>
+          <a  href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        </li>
+      <% } %>
+    </ul>
+  </nav>
+
+  <!-- Category -->
+  <nav>
+    <h2>Categorias</h2>
+    <%- partial('_partial/_widget/category') %>
+  </nav>
+
+  <!-- Tag -->
+  <nav>
+    <h2>Tags</h2>
+    <%- partial('_partial/_widget/tag') %>
+  </nav>
+</aside>
