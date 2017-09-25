@@ -1,0 +1,20 @@
+<header>
+  <div>
+    <h1>
+      <a href="<%- url_for() %>" title="<%= config.subtitle %>">Ramon Santos</a>
+    </h1>
+
+    <!-- TODO #4 -->
+
+    <nav>
+      <ul>
+        <!-- Menu -->
+        <% for (var i in theme.menu){ %>
+          <li class="<%= url_for(theme.menu[i]) == url_for(path).substring(0, url_for(path).lastIndexOf('/') + 1) ? 'active' : ''   %>">
+            <a  href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          </li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</header>
