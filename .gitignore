@@ -4,7 +4,8 @@ logs
 
 # Dependency Directory
 node_modules
+package-lock.json
 
 # Sass
-source/css/_css
 .sass-cache
+source/css/style.css
