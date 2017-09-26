@@ -1,0 +1,25 @@
+<article>
+  <header>
+    <%- partial('post/title') %>
+    <ul>
+      <li>
+        <i></i>
+        <%- partial('post/date') %>
+      </li>
+      <li>
+        <i></i>
+        <%- partial('post/tag') %>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Content Post-->
+  <div>
+    <%- post.lede || post.excerpt || post.content %>
+  </div>
+  <!-- End Content Post-->
+
+  <br>
+</article>
+
+<hr>

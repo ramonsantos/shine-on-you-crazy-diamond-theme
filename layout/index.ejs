@@ -3,6 +3,7 @@
 <% } else { %>
   <section>
     <main>
+      <%- partial('_partial/archive-home', {pagination: config.archive, index: true}) %>
     </main>
 
     <%- partial('_partial/sidebar') %>
