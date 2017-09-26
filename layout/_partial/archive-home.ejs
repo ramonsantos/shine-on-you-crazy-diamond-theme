@@ -1,16 +1,14 @@
-<main>
-  <% page.posts.each(function(post, i){ %>
-    <%- partial('archive-post', {post: post, even: i % 2 == 0, index: index}) %>
-  <% }) %>
+<% page.posts.each(function(post, i){ %>
+  <%- partial('archive-post', {post: post, even: i % 2 == 0, index: index}) %>
+<% }) %>
 
-  <footer>
-    <% if (page.posts.length){ %>
-      <div>
-        <%- paginator({
-          prev_text: 'Prev',
-          next_text: 'Next'
-          }) %>
-      </div>
-    <% } %>
-  </footer>
-</main>
+<footer>
+  <% if (page.posts.length){ %>
+    <div>
+      <%- paginator({
+        prev_text: 'Prev',
+        next_text: 'Next'
+        }) %>
+    </div>
+  <% } %>
+</footer>
