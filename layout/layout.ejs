@@ -3,9 +3,9 @@
 <body>
   <%- partial('_partial/header', null, { path: path }) %>
 
-  <%- partial('_partial/mobile-nav') %>
-
   <%- body %>
+
+  <%- partial('_partial/mobile-nav') %>
 
   <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
 </body>
