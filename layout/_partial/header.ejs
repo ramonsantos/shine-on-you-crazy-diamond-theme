@@ -1,12 +1,13 @@
 <header class="header">
   <div class="header-content">
     <h1>
-      <a class="site-logo" href="<%- url_for() %>" title="<%= config.subtitle %>">Ramon Santos</a>
+      <a class="site-title" href="<%- url_for() %>" title="<%= config.subtitle %>">Ramon Santos</a>
     </h1>
 
     <!-- TODO #4 -->
+    <a class="mobile-menu-bar" href="javascript:void(0);"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
-    <nav>
+    <nav class="header-menu">
       <ul>
         <!-- Menu -->
         <% for (var i in theme.menu){ %>

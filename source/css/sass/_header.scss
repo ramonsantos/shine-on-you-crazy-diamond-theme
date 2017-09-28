@@ -14,6 +14,7 @@
   padding: 0px 15px 0px 15px;
   margin-right: auto;
   margin-left: auto;
+
   h1 {
     display: inline;
     font-size: 2.0rem;
@@ -21,7 +22,18 @@
   }
 }
 
-.site-logo {
+.site-title {
   float: left;
   padding: 10px 0px 10px 0px;
+}
+
+.mobile-menu-bar {
+  float: right;
+  width: auto;
+  font-size: 2rem;
+  padding: 10px 0px 10px 0px;
+}
+
+.header-menu {
+  display: none;
 }
