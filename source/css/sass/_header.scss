@@ -17,23 +17,51 @@
 
   h1 {
     display: inline;
-    font-size: 2.0rem;
-    width: auto;
+    font-size: 31px;
+  }
+
+  a {
+    padding: 10px 0px 10px 0px;
   }
 }
 
 .site-title {
   float: left;
-  padding: 10px 0px 10px 0px;
 }
 
 .mobile-menu-bar {
   float: right;
-  width: auto;
-  font-size: 2rem;
-  padding: 10px 0px 10px 0px;
+  font-size: 31px;
 }
 
 .header-menu {
   display: none;
+  float: right;
+
+  li {
+    display: inline-flex;
+    font-size: 21px;
+  }
+
+  a {
+    padding: 17px 0px 17px 0px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #555;
+  }
+
+  a:hover {
+    color: $principal-color;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px){
+  .mobile-menu-bar {
+    display: none;
+  }
+
+  .header-menu {
+    display: block;
+  }
 }
