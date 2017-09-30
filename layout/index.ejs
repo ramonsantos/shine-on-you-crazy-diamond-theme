@@ -1,7 +1,7 @@
 <% if(page.content){ %>
   <%- page.content %>
 <% } else { %>
-  <section class="content-section">
+  <section class="content-section content-width">
     <main>
       <%- partial('_partial/archive-home', {pagination: config.archive, index: true}) %>
     </main>
