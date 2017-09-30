@@ -2,6 +2,8 @@
   <ul>
     <% site.categories.forEach(function(cat){ %>
       <li>
+        <!-- TODO #8 -->
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
         <a href="<%= url_for(cat.path) %>"><%= cat.name %> (<%= cat.length  %>)</a>
       </li>
     <% }); %>
