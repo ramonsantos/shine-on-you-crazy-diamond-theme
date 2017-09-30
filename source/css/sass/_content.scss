@@ -1,4 +1,28 @@
 /* Content */
 .content-section {
-  padding-top: 70px;
+  padding: 70px 15px 0px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-post {
+  font-size: 15px;
+  margin-bottom: 25px;
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    display: inline-flex;
+  }
+
+  li {
+    margin-right: 10px;
+  }
+
+  i {
+    color: $principal-color;
+  }
 }
