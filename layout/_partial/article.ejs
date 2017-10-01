@@ -13,11 +13,16 @@
     </ul>
   </header>
 
-  <!-- Content Post-->
   <div class="content-post">
     <%- post.content %>
   </div>
-  <!-- End Content Post-->
 
-  <br>
+  <% if (post.comments && theme.disqus_shortname){ %>
+    <footer id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </footer>
+    <br>
+  <% } %>
 </article>
