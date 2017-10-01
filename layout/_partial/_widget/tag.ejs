@@ -2,7 +2,8 @@
   <ul>
     <% site.tags.forEach(function(tag){ %>
       <li>
-        <a href="<%= url_for(tag.path) %>"><i></i><%= tag.name %></a>
+        <!-- TODO #8 -->
+        <a href="<%= url_for(tag.path) %>"><i class="fa fa-tag" aria-hidden="true"></i><%= tag.name %></a>
       </li>
     <% }); %>
   </ul>
