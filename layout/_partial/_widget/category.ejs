@@ -4,7 +4,8 @@
       <li>
         <!-- TODO #8 -->
         <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <a href="<%= url_for(cat.path) %>"><%= cat.name %> (<%= cat.length  %>)</a>
+        <!-- TODO #8 -->
+        <a href="<%= url_for(cat.path) %>"><%= cat.name %> <i class="fa fa-circle" aria-hidden="true"></i> <%= cat.length  %></a>
       </li>
     <% }); %>
   </ul>

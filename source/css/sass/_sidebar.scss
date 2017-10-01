@@ -16,7 +16,6 @@
     display: inline-flex;
     margin-left: 5px;
     color: $text-color;
-    padding: 5px 5px 5px 5px;
   }
 
   a:hover {
@@ -32,6 +31,18 @@
     padding: 7px 0px 7px 0px;
     font-size: 17px;
   }
+
+  a {
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+
+    i {
+      font-size: 6px;
+      padding-top: 10px;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
 }
 
 .tags-subsection {
@@ -45,6 +56,11 @@
   i {
     padding-right: 5px;
     color: $principal-color;
+    padding-top: 4px;
+  }
+
+  a {
+    padding: 5px 9px 5px 9px;
   }
 
   a:hover {
