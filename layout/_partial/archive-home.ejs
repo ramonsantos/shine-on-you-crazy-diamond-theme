@@ -4,10 +4,10 @@
 
 <footer>
   <% if (page.posts.length){ %>
-    <div>
+    <div class="pagination">
       <%- paginator({
-        prev_text: 'Prev',
-        next_text: 'Next'
+        prev_text: 'Anterior',
+        next_text: 'Próximo'
         }) %>
     </div>
   <% } %>
