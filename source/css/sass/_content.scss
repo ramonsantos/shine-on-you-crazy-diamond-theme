@@ -7,8 +7,14 @@
 }
 
 .main-section {
-  width: 75%;
-  margin-right: 10px;
+  width: 100%;
+}
+
+@media (min-width: $breakpoint-content-section) {
+  .main-section {
+    width: 75%;
+    margin-right: 10px;
+  }
 }
 
 .header-post {
