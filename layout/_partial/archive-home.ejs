@@ -1,5 +1,7 @@
 <% page.posts.each(function(post, i){ %>
-  <%- partial('archive-post', {post: post, even: i % 2 == 0, index: index}) %>
+  <%- partial('article', {post: post, even: i % 2 == 0, index: index}) %>
+
+  <hr class="post-separator">
 <% }) %>
 
 <footer>
