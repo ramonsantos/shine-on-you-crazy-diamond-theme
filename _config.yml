@@ -2,3 +2,7 @@
 menu:
   Home: /
   Sobre: /ramon-santos
+
+# Integrations
+disqus_shortname: ramon-santos
+google_analytics: UA-82053881-1
