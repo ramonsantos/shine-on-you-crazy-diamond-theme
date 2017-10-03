@@ -1,0 +1,94 @@
+.main-about-page {
+  width: 100%;
+
+  h2 {
+    padding-top: 10px;
+    font-size: 26px;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 430px) {
+  .main-about-page {
+    padding: 0 15px 0 15px;
+  }
+}
+
+@media (min-width: 520px) {
+  .main-about-page {
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media (min-width: 820px) {
+  .main-about-page {
+    max-width: 780px;
+    margin: 0 auto 10px auto;
+  }
+}
+
+.profile-img {
+  max-width: 220px;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 110px;
+}
+
+.header-about-page {
+  text-align: center;
+  margin-bottom: 25px;
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  hr {
+    width: 340px;
+    border: 0;
+    border-top: 1px solid #eee;
+  }
+
+  ul {
+    display: inline-flex;
+
+    li {
+      margin: 3px;
+    }
+
+    a {
+      padding: .5rem .7rem .5rem .7rem;
+      font-size: 1.6rem;
+      color: $text-color;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $principal-color;
+    }
+  }
+}
+
+.skill-list {
+  ul {
+    margin-left: 25px;
+  }
+
+  li {
+    padding: 0 0 0.5rem 1.3px;
+    display: flex;
+
+    i {
+      padding-right: 10px;
+    }
+  }
+}
+
+.section-separator {
+  margin-top: 30px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
