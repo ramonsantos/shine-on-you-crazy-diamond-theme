@@ -49,7 +49,7 @@
   hr {
     width: 340px;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: $border;
   }
 
   ul {
@@ -90,5 +90,5 @@
 .section-separator {
   margin-top: 30px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: $border;
 }

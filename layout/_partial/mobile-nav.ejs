@@ -1,9 +1,9 @@
 <!-- Only Mobile -->
 <aside id="mobileMenu" class="mobile-menu mobile-menu-hidden">
-  <a id="menu-bar-close" href="javascript:void(0);"><i class="fa fa-times" aria-hidden="true"></i></a>
+  <a id="menuClose" class="menu-close-btn" href="javascript:void(0);"><i class="fa fa-close" aria-hidden="true"></i></a>
 
   <!-- Menu -->
-  <nav>
+  <nav class="page-links">
     <ul>
       <% for (var i in theme.menu){ %>
         <li>
@@ -11,17 +11,5 @@
         </li>
       <% } %>
     </ul>
-  </nav>
-
-  <!-- Category -->
-  <nav>
-    <h2>Categorias</h2>
-    <%- partial('_partial/_widget/category') %>
-  </nav>
-
-  <!-- Tag -->
-  <nav>
-    <h2>Tags</h2>
-    <%- partial('_partial/_widget/tag') %>
   </nav>
 </aside>

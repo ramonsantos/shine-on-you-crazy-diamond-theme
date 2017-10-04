@@ -12,5 +12,5 @@ let toggleMobileMenu = function (event) {
 document.getElementById('menuBar')
         .addEventListener('click', toggleMobileMenu);
 
-document.getElementById('menu-bar-close')
+document.getElementById('menuClose')
         .addEventListener('click', toggleMobileMenu);
