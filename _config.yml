@@ -1,6 +1,7 @@
 # Header Menu
 menu:
   Home: /
+  Blog: /blog
   Sobre: /ramon-santos
 
 # Integrations
