@@ -4,13 +4,15 @@
   <hr class="post-separator">
 <% }) %>
 
-<footer>
-  <% if (page.posts.length){ %>
-    <div class="pagination">
-      <%- paginator({
-        prev_text: 'Anterior',
-        next_text: 'Próximo'
-        }) %>
-    </div>
-  <% } %>
-</footer>
+<% if (!is_archive()) { %>
+  <footer>
+    <% if (page.posts.length){ %>
+      <div class="pagination">
+        <%- paginator({
+          prev_text: 'Anterior',
+          next_text: 'Próximo'
+          }) %>
+      </div>
+    <% } %>
+  </footer>
+<% } %>
