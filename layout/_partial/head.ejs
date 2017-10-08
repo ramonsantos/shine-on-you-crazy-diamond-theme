@@ -5,18 +5,19 @@
   <%
     var title = page.title;
   %>
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <title><% if (title && is_post()) { %><%= title %> | <% } %><%= config.title %></title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/favicon.ico">
 
-  <!-- TODO #1 -->
-
-  <!-- TODO #2 -->
-
-  <!-- TODO #3 -->
+  <%- open_graph({
+    twitter_id: theme.twitter_id,
+    google_plus: theme.g_plus,
+    fb_admins: theme.facebook_user_id,
+    fb_app_id: theme.facebook_app_id
+  })%>
 
   <!-- TODO #8 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
