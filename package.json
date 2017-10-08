@@ -8,5 +8,8 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
   }
 }
