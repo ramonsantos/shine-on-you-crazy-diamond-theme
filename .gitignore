@@ -9,3 +9,6 @@ package-lock.json
 # Sass
 .sass-cache
 source/css/style.css
+
+# JS
+source/js/scripts.js
