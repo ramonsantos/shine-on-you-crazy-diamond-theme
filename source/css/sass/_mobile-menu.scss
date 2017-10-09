@@ -41,6 +41,11 @@
     border-top: $border;
   }
 
+  a:active,
+  a:hover {
+    text-decoration: none;
+  }
+
   li:last-child {
     width: 220px;
     border: 0;
