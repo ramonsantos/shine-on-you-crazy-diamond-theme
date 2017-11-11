@@ -2,7 +2,7 @@
 menu:
   Home: /
   Blog: /blog
-  Sobre: /ramon-santos
+  Sobre: /about
 
 # Integrations
 disqus_shortname: ramon-santos
