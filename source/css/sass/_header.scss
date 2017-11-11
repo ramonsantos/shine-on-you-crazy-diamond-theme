@@ -52,7 +52,13 @@
 
   a:hover {
     color: $principal-color;
-    text-decoration: underline;
+    text-decoration: none;
+  }
+
+  .active-menu {
+    a {
+      color: $principal-color;
+    }
   }
 }
 
