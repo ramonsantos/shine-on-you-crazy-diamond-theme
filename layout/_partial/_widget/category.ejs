@@ -2,10 +2,13 @@
   <ul>
     <% site.categories.sort('name').forEach(function(cat) { %>
       <li>
-        <!-- TODO #8 -->
         <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <!-- TODO #8 -->
-        <a href="<%= url_for(cat.path) %>"><%= cat.name %> <i class="fa fa-circle" aria-hidden="true"></i> <%= cat.length %></a>
+
+        <a href="<%= url_for(cat.path) %>">
+          <%= cat.name %>
+          <i class="fa fa-circle" aria-hidden="true"></i>
+          <%= cat.length %>
+        </a>
       </li>
     <% }); %>
   </ul>

@@ -1,7 +1,8 @@
-<% if (post.tags && post.tags.length){ %>
-  <!-- TODO #8 -->
+<% if (post.tags && post.tags.length) { %>
   <i class="fa fa-tags"></i>
-  <% post.tags.forEach(function(tag, i){ %>
-    <%- link_to(tag.path, tag.name) %><% if (i != post.tags.length - 1){ %>,<% } %>
+
+  <% post.tags.forEach(function(tag, i) { %>
+    <%- link_to(tag.path, tag.name) %>
+    <% if (i != post.tags.length - 1) { %>,<% } %>
   <% }); %>
 <% } %>

@@ -1,9 +1,11 @@
-<% if (site.tags.length){ %>
+<% if (site.tags.length) { %>
   <ul>
-    <% site.tags.forEach(function(tag){ %>
+    <% site.tags.forEach(function(tag) { %>
       <li>
-        <!-- TODO #8 -->
-        <a href="<%= url_for(tag.path) %>"><i class="fa fa-tag" aria-hidden="true"></i><%= tag.name %></a>
+        <a href="<%= url_for(tag.path) %>">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+          <%= tag.name %>
+        </a>
       </li>
     <% }); %>
   </ul>
