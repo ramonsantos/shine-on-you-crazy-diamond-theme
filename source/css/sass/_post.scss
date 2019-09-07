@@ -1,24 +1,24 @@
-/* Content Post */
+// Content Post
 .content-post {
   p {
-    line-height: 1.5rem;
     font-size: 1rem;
-    margin-bottom: 0.8rem;
+    line-height: 1.5rem;
+    margin-bottom: .8rem;
   }
 
   h2 {
     font-size: 26px;
-    margin-bottom: 0.5rem
+    margin-bottom: .5rem;
   }
 
   h3 {
     font-size: 21px;
-    margin-bottom: 0.5rem
+    margin-bottom: .5rem;
   }
 
   h4 {
     font-size: 19px;
-    margin-bottom: 0.5rem
+    margin-bottom: .5rem;
   }
 
   ul {
@@ -31,17 +31,17 @@
 }
 
 .terminal {
-  color: #00ff00;
-  background-color: #222;
+  background-color: #222222;
   border-radius: 6px;
+  color: #00ff00;
+  font-size: 1em;
+  margin-bottom: .8rem;
   padding: 16px;
-  font-size: 1.0em;
-  margin-bottom: 0.8rem;
 }
 
 .img {
-  text-align: center;
   margin-bottom: 20px;
+  text-align: center;
 
   img {
     max-width: 100%;

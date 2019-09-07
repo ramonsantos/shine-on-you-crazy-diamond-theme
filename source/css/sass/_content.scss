@@ -1,9 +1,9 @@
-/* Content */
+// Content
 .content-section {
   display: flex;
-  padding: 90px 15px 0px 15px;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  padding: 90px 15px 0;
 }
 
 .main-section {
@@ -12,8 +12,8 @@
 
 @media (min-width: $breakpoint-content-section) {
   .main-section {
-    width: 75%;
     margin-right: 10px;
+    width: 75%;
   }
 }
 
@@ -44,15 +44,15 @@
   margin-bottom: 20px;
 
   a, span {
-    margin-right: 6px;
     border-radius: 21px;
-    padding: 6px 13px 6px 13px;
     color: $text-color;
+    margin-right: 6px;
+    padding: 6px 13px;
   }
 
   .current {
     background: $principal-color;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
   }
 
@@ -64,7 +64,7 @@
 }
 
 .post-separator {
-  margin: 50px 0 40px;
   border: 0;
   border-top: 1px solid $border-bottom-color;
+  margin: 50px 0 40px;
 }
