@@ -6,16 +6,16 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 
 function css() {
-  return src('./source/css/sass/*.scss')
+  return src('./source/stylesheets/sass/*.scss')
     .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
-    .pipe(dest('./source/css'))
+    .pipe(dest('./source/stylesheets'))
 }
 
 function js() {
-  return src('./source/js/es6/*.js')
+  return src('./source/javascripts/es6/*.js')
     .pipe(concat('scripts.js'))
     .pipe(babel({presets: ['env']}))
-    .pipe(dest('./source/js'))
+    .pipe(dest('./source/javascripts'))
 }
 
 exports.js = js;

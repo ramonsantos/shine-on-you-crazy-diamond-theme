@@ -8,7 +8,7 @@ package-lock.json
 
 # Sass
 .sass-cache
-source/css/style.css
+source/stylesheets/style.css
 
 # JS
-source/js/scripts.js
+source/javascripts/scripts.js
