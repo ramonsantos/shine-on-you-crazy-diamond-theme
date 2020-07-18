@@ -1,0 +1,32 @@
+<article>
+  <header class="header-post">
+    <h1>
+      <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+    </h1>
+
+    <ul>
+      <li>
+        <i></i>
+        <%- partial('post/date') %>
+      </li>
+      <li>
+        <i></i>
+        <%- partial('post/tag') %>
+      </li>
+    </ul>
+  </header>
+
+  <% if (!is_archive()) { %>
+    <div class="content-post">
+      <%- post.content %>
+    </div>
+
+    <% if (is_post() && theme.disqus_shortname) { %>
+      <footer id="comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </footer>
+    <% } %>
+  <% } %>
+</article>
