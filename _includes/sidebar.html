@@ -1,0 +1,44 @@
+<aside class="sidebar-section">
+  {% if site.categories %}
+    <div class="category-subsection">
+      <h2>Categorias</h2>
+
+      <ul>
+        {% assign categories = site.categories | sort %}
+
+        {% for cat in categories %}
+          <li>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+            <!-- TODO - #3 -->
+            <a href="">
+              {{ cat[0] }}
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              {{ cat[1].size }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if site.tags %}
+    <div class="tags-subsection">
+      <h2>Tags</h2>
+
+      <ul>
+        {% assign tags = site.tags | sort %}
+
+        {% for tag in tags %}
+          <li>
+            <!-- TODO - #2 -->
+            <a href="">
+              <i class="fa fa-tag" aria-hidden="true"></i>
+              {{ tag[0] }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</aside>
