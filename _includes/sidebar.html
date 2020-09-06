@@ -10,8 +10,7 @@
           <li>
             <i class="fa fa-angle-right" aria-hidden="true"></i>
 
-            <!-- TODO - #3 -->
-            <a href="">
+            <a href="/categories/{{ cat[0] | slugify }}">
               {{ cat[0] }}
               <i class="fa fa-circle" aria-hidden="true"></i>
               {{ cat[1].size }}
@@ -31,8 +30,7 @@
 
         {% for tag in tags %}
           <li>
-            <!-- TODO - #2 -->
-            <a href="">
+            <a href="/tags/{{ tag[0] | slugify }}">
               <i class="fa fa-tag" aria-hidden="true"></i>
               {{ tag[0] }}
             </a>

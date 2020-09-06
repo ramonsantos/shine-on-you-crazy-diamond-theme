@@ -14,9 +14,16 @@
       {% if page.tags.size > 0 %}
         <li>
           <i></i>
-          <i class="fa fa-tags"></i>
-          {{ page.tags | join: ", " }}
-          <!-- TODO - #2 -->
+          {% assign tag_names = page.tags %}
+
+          <a href="/tags/{{ tag_names[0] | slugify }}">
+            <i class="fa fa-tag" aria-hidden="true"></i>
+            {{ tag_names[0] }}
+          </a>
+
+          {% for tag_name in tag_names offset:1 %}
+            , <a href="/tags/{{ tag_name | slugify }}">{{ tag_name }}</a>
+          {% endfor %}
         </li>
       {% endif %}
     </ul>
