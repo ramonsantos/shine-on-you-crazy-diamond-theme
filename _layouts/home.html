@@ -22,13 +22,13 @@ pagination:
           {% if post.tags.size > 0 %}
             <li>
               <i></i>
-              <i class="fa fa-tag" aria-hidden="true"></i>
+              <i class="fa fa-tags"></i>
 
               {% assign tag_names = post.tags %}
               {% assign tag_array = "" | split: "/" %}
 
               {% for tag_name in tag_names %}
-                {% capture link %}<a href="/tags/{{ tag_name | slugify }}">{{ tag_name }}</a>{% endcapture %}
+              {% capture link %}<a href="/tags/{{ tag_name | slugify }}/" title="{{ tag_name }}">{{ tag_name }}</a>{% endcapture %}
                 {% assign tag_array = tag_array | push: link %}
               {% endfor %}
 
@@ -41,16 +41,16 @@ pagination:
       <div class="content-post">
         {{ post.content }}
       </div>
-      <hr class="post-separator">
-
     </article>
+
+    <hr class="post-separator">
   {% endfor %}
 
   {% if paginator.page_trail %}
     <footer>
       <div class="pagination">
         {% if paginator.previous_page %}
-          <a class="extend prev" rel="" href="{{ paginator.previous_page_path }}">Anterior</a>
+          <a class="extend prev" rel="prev" href="{{ paginator.previous_page_path }}">Anterior</a>
         {% endif %}
 
         {% for trail in paginator.page_trail %}

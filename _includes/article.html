@@ -14,13 +14,13 @@
       {% if page.tags.size > 0 %}
         <li>
           <i></i>
-          <i class="fa fa-tag" aria-hidden="true"></i>
+          <i class="fa fa-tags"></i>
 
           {% assign tag_names = page.tags %}
           {% assign tag_array = "" | split: "/" %}
 
           {% for tag_name in tag_names %}
-            {% capture link %}<a href="/tags/{{ tag_name | slugify }}">{{ tag_name }}</a>{% endcapture %}
+            {% capture link %}<a href="/tags/{{ tag_name | slugify }}/" title="{{ tag_name }}">{{ tag_name }}</a>{% endcapture %}
             {% assign tag_array = tag_array | push: link %}
           {% endfor %}
 
