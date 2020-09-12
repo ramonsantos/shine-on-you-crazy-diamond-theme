@@ -1,34 +1,11 @@
 <article>
-  <header class="header-post">
-    <h1>
-      <a href="{{ page.link | escape }}">{{ page.title | escape }}</a>
-    </h1>
-
-    <ul>
-      <li>
-        <i></i>
-        <i class="fa fa-calendar"></i>
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
-      </li>
-
-      {% if page.tags.size > 0 %}
-        <li>
-          <i></i>
-          <i class="fa fa-tags"></i>
-
-          {% assign tag_names = page.tags %}
-          {% assign tag_array = "" | split: "/" %}
-
-          {% for tag_name in tag_names %}
-            {% capture link %}<a href="/tags/{{ tag_name | slugify }}/" title="{{ tag_name }}">{{ tag_name }}</a>{% endcapture %}
-            {% assign tag_array = tag_array | push: link %}
-          {% endfor %}
-
-          {{ tag_array | join: ', ' }}
-        </li>
-      {% endif %}
-    </ul>
-  </header>
+  {%- include
+    article_header.html
+    post_url=page.url
+    post_title=page.title
+    post_date=page.date
+    post_tags=page.tags
+  -%}
 
   <div class="content-post">
     {{ content }}
