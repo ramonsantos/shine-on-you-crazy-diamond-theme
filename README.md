@@ -1,11 +1,11 @@
-# shine-on-you-crazy-diamond-theme
+# Shine on You Crazy Diamond Theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+[![Gem Version](https://badge.fury.io/rb/shine-on-you-crazy-diamond-theme.svg)](http://badge.fury.io/rb/shine-on-you-crazy-diamond-theme)
+[![Maintainability](https://api.codeclimate.com/v1/badges/77053aa36e97ac9b72dc/maintainability)](https://codeclimate.com/github/ramonsantos/shine-on-you-crazy-diamond-theme/maintainability)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/ramonsantos/shine-on-you-crazy-diamond-theme)
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+Jekyll theme for my website
 
 ## Installation
 
@@ -23,19 +23,15 @@ theme: shine-on-you-crazy-diamond-theme
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install shine-on-you-crazy-diamond-theme
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+```bash
+$ gem install shine-on-you-crazy-diamond-theme
+```
 
 ## Development
 
@@ -49,4 +45,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `shine-on
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-

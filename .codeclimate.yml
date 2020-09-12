@@ -10,7 +10,3 @@ plugins:
     enabled: true
   scss-lint:
     enabled: true
-
-exclude_patterns:
-  - package-lock.json
-  - node_modules/
