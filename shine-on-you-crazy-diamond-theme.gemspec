@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name     = 'shine-on-you-crazy-diamond-theme'
-  spec.version  = '0.5.2'
+  spec.version  = '0.5.3'
   spec.authors  = ['ramonsantos']
   spec.email    = ['ramonsantos.pe@gmail.com']
   spec.summary  = 'Theme from website https://ramonsantos.github.io/'
@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'jekyll-feed', '~> 0.15'
   spec.add_runtime_dependency 'jekyll-paginate-v2', '~> 3.0'
   spec.add_runtime_dependency 'jekyll-seo-tag', '~> 2.6', '>= 2.6.1'
-  spec.add_runtime_dependency 'jekyll-target-blank', '~> 2.0'
 
   spec.add_development_dependency 'bundler'
 end

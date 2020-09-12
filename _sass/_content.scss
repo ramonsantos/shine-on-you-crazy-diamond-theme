@@ -27,7 +27,7 @@
   }
 
   ul {
-    display: inline-flex;
+    display: inline;
   }
 
   li {
@@ -36,6 +36,14 @@
 
   i {
     color: $principal-color;
+  }
+}
+
+@media (min-width: $breakpoint-content-section) {
+  .header-post {
+    ul {
+      display: inline-flex;
+    }
   }
 }
 
