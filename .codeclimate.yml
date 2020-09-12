@@ -10,3 +10,6 @@ plugins:
     enabled: true
   scss-lint:
     enabled: true
+
+exclude_patterns:
+  - assets/main.scss
