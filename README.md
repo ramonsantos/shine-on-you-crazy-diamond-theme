@@ -3,7 +3,6 @@
 [![Gem Version](https://badge.fury.io/rb/shine-on-you-crazy-diamond-theme.svg)](http://badge.fury.io/rb/shine-on-you-crazy-diamond-theme)
 [![Maintainability](https://api.codeclimate.com/v1/badges/77053aa36e97ac9b72dc/maintainability)](https://codeclimate.com/github/ramonsantos/shine-on-you-crazy-diamond-theme/maintainability)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/ramonsantos/shine-on-you-crazy-diamond-theme)
 
 Jekyll theme for my website
 
