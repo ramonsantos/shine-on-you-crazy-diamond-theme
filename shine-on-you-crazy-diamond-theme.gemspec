@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name     = 'shine-on-you-crazy-diamond-theme'
-  spec.version  = '1.1.1'
+  spec.version  = '1.1.2'
   spec.authors  = ['ramonsantos']
   spec.email    = ['ramonsantos.pe@gmail.com']
   spec.summary  = 'Theme from website https://ramonsantos.github.io/'

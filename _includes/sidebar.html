@@ -12,8 +12,7 @@
 
             <a href="/categories/{{ cat[0] | slugify }}">
               {{ cat[0] }}
-              <i class="fa fa-circle" aria-hidden="true"></i>
-              {{ cat[1].size }}
+              ({{ cat[1].size }})
             </a>
           </li>
         {% endfor %}
